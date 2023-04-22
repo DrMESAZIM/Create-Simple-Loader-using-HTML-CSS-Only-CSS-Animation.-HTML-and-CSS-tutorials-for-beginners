@@ -1,0 +1,33 @@
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+body{
+height: 100vh;
+background-color: #333;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.loader{
+	width: 200px;
+	height: 200px;
+	border: 20px solid;
+	border-color: #fff transparent;
+	border-radius: 500%;
+	animation: load 1s linear infinite;
+}
+
+
+
+@Keyframes  load{
+	100%{
+      transform: rotate(360deg);
+	}
+}
